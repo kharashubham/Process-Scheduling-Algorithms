@@ -69,20 +69,7 @@ int main()
                 {
                 if (job_arr[i].AT > PCT)
                 {
-                    if(job_arr[i].RT < TQ || job_arr[i].RT == TQ)
-                    {
-                        PCT = job_arr[i].AT + job_arr[i].BT;
-                        job_arr[i].CT = PCT;
-                        total -= job_arr[i].RT;
-                        job_arr[i].RT = 0;
-                    }
-                    else
-                    {
-                        PCT = job_arr[i].AT + TQ;
-                        job_arr[i].RT -= TQ;
-                        total -= TQ;
-                    }
-
+                    break;
                 }
                 else
                 {
